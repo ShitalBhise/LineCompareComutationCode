@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class LineCompareCmp {
 	public static int getLengthOfLine(Scanner scanner) {
-
 		System.out.println("Please enter x1");
 		int x1 = scanner.nextInt();
 
