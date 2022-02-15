@@ -1,14 +1,33 @@
 package com.java;
 
+import java.util.Scanner;
+
 public class LineCompareCmp {
-	  public static void main(String[] args) {
+	public static void main(String[] args) {
 
-		  System.out.println("Welcome to Line Comparing Computation");
-   }
-} 
-	
-	
-	
-	
-	
+		System.out.println("Welcome to Line Comparing Computation");
 
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Please enter x1");
+		int x1 = scanner.nextInt();
+
+		System.out.println("Please enter y1");
+		int y1 = scanner.nextInt();
+
+		System.out.println("Please enter x2");
+		int x2 = scanner.nextInt();
+
+		System.out.println("Please enter y2");
+		int y2 = scanner.nextInt();
+
+		int val1 = (int) Math.pow((x2 - x1), 2);
+		int val2 = (int) Math.pow((y2 - y1), 2);
+		int result = (int) Math.sqrt(val1 + val2);
+
+		System.out.println("Langth of line = " + result);
+
+		scanner.close();
+	}
+
+}
